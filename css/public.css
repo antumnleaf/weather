@@ -1,0 +1,15 @@
+*{
+	margin: 0;		/*body上的8px*/
+	padding: 0;
+	text-decoration: none; /*文本修饰下划线*/
+	font-style: normal;
+	list-style: none;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+	box-sizing: border-box;
+}
+img{
+	width: 100%;
+	height: 100%;
+	border: 0;
+	display: block;
+}
