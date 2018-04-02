@@ -7,7 +7,7 @@ $.getScript("https://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js",func
 function getWeather(city){
 	$(".now_cityname").html(city);
 	$.ajax({
-		url:"http://api.jisuapi.com/weather/query?appkey=e5bac3fcb7146e1b&city="+city,
+		url:"https://api.jisuapi.com/weather/query?appkey=e5bac3fcb7146e1b&city="+city,
 		dataType:"jsonp",
 		success:function(r){
 			$(".now_air h2").html(r.result.aqi.quality);
@@ -68,7 +68,7 @@ $(".now_city").click(function(){
     var province=[]; //存放所有省的数据
     var city=[]; //存放某个省的所有市
     $.ajax({
-        url:"http://api.jisuapi.com/weather/city?appkey=e5bac3fcb7146e1b",
+        url:"https://api.jisuapi.com/weather/city?appkey=e5bac3fcb7146e1b",
         dataType:"jsonp",
         success:function(r){
         	data=r.result;
