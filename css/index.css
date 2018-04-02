@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'iconfont';  /* project id 561462 */
+  src: url('https://at.alicdn.com/t/font_561462_zrjm5ap157mn29.eot');
+  src: url('https://at.alicdn.com/t/font_561462_zrjm5ap157mn29.eot?#iefix') format('embedded-opentype'),
+  url('https://at.alicdn.com/t/font_561462_zrjm5ap157mn29.woff') format('woff'),
+  url('https://at.alicdn.com/t/font_561462_zrjm5ap157mn29.ttf') format('truetype'),
+  url('https://at.alicdn.com/t/font_561462_zrjm5ap157mn29.svg#iconfont') format('svg');
+}
 body{
 	font-size: 12px;
 	background-color: #f5f5f5;
@@ -17,6 +25,9 @@ body{
 	text-align: center;
 	line-height: 1.57rem;
 }
+.address_icon{
+	font-family: 'iconfont';
+}
 .now_air{
 	width: 2.1rem;
 	height:1.26rem;
@@ -25,12 +36,12 @@ body{
 	margin-top: 0.05rem;
 	border-radius: 0.2rem;
 	text-align: center;
-	padding-top: .31rem;
 }
 .now_air h1,.now_air h2{
 	font-size: 0.36rem;
 	line-height: 0.36rem;
 	color: #fff;
+	line-height: .63rem;
 }
 .now_temp{
 	font-size: 0.96rem;
@@ -55,10 +66,11 @@ body{
 }
 .now_notice{
 	font-size: 0.32rem;
-	line-height: 0.32rem;
+	line-height: 0.36rem;
 	color: #fff;
 	text-align: center;
 	margin-top: 1.48rem;
+	padding: 0 .32rem;
 }
 #future{
 	width: 100%;
@@ -205,12 +217,13 @@ header{
 	color: #999;
 }
 .citys_list{
+	margin-top: 10px;
 	width: 7.77rem;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
-.citys_name{
+.citys_name,.citys_hot_name{
 	width: 2.34rem;
 	height: 0.84rem;
 	background-color: #fff;
@@ -224,6 +237,6 @@ header{
 	line-height: 0.84rem;
 	font-size: 0.38rem;
 }
-.citys_guizhou{
+.citys_pro{
 	margin-top: 0.16rem;
 }
