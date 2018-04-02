@@ -1,4 +1,4 @@
-$.getScript("http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js",function(){
+$.getScript("int.dpool.sina.com.cn/iplookup/iplookup.php?format=js",function(){
     var data=remote_ip_info;
     var city=data.city||"太原";
     
