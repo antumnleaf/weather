@@ -115,10 +115,17 @@ $(".now_city").click(function(){
           		if(val==""){
           			return;
           		}
-          		if(val!=$(".province").html()||val!=$(".citys_text").html()){
-          			$(".citys_search").val("");
-          			return;
-          		}
+          		$.each(data,function(index,ele){
+          			if(val!=ele){
+          				return;
+          			}
+          		})
+          		// if(val!=$(".province").html()&&val!=$(".citys_text").html()){
+          		// 	console.log(val);
+          		// 	$(".citys_search").val("");
+          		// 	return;
+          		// }
+          		$(".citys_search").val("");
           		$("#citys").hide();
           		getWeather(val);
           	})
